@@ -29,7 +29,7 @@ pip install requests
 ## 2. Ekzekutoni skriptën
 
    ```bash
-   python tvepg_scraper.py
+   python ipko.py
    ```
 
 4. Plotësoni të dhënat e kërkuara:
