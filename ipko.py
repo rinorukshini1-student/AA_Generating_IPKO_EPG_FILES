@@ -220,7 +220,7 @@ def generate_time_preferences(epg_data, max_preferences=20, block_size=60):
             block_start = (start_min // block_size) * block_size
             time_genre_map[(block_start, genre)] += 1
 
-    # Build preferences
+
     prefs = []
     for (block_start, genre), count in sorted(time_genre_map.items()):
         prefs.append({
@@ -230,7 +230,7 @@ def generate_time_preferences(epg_data, max_preferences=20, block_size=60):
             "bonus": min(100, 20 + count * 10 + random.randint(0, 10))
         })
 
-    # Take top N by bonus
+
     prefs = sorted(prefs, key=lambda x: x["bonus"], reverse=True)[:max_preferences]
     prefs.sort(key=lambda x: x["start"])
     return prefs
@@ -263,6 +263,282 @@ def generate_priority_blocks(epg_data, block_size=60, top_n=3):
 
 def epg_to_smart_json(epg_data):
     all_starts, all_ends = [], []
+    used_ids = set()  
+
+ 
+    for ch_data in epg_data.values():
+        for show in ch_data.get("shows", []):
+            start_time = show.get("show_start")
+            end_time = show.get("show_end")
+
+            if start_time and end_time:
+                start_min = unix_to_minutes(start_time)
+                end_min = unix_to_minutes(end_time)
+
+
+                if end_min < start_min:
+                    end_min += 1440  
+
+                all_starts.append(start_min)
+                all_ends.append(end_min)
+
+    
+    opening_time = min(all_starts) if all_starts else 480
+    closing_time = max(all_ends) if all_ends else 1380  
+
+
+    smart_json = {
+        "opening_time": opening_time,
+        "closing_time": closing_time,
+        "min_duration": 30,
+        "max_consecutive_genre": 2,
+        "channels_count": len(epg_data),
+        "switch_penalty": 5,
+        "termination_penalty": 10,
+        "time_preferences": generate_time_preferences(epg_data),
+        "priority_blocks": generate_priority_blocks(epg_data),
+        "channels": []
+    }
+
+
+    for i, (channel, ch_data) in enumerate(epg_data.items()):
+        programs = []
+        for pid, show in enumerate(ch_data.get("shows", []), start=1):
+            start_time = unix_to_minutes(show["show_start"])
+            end_time = unix_to_minutes(show["show_end"])
+
+            
+            if end_time < start_time:
+                end_time += 1440  
+
+            genres = show.get("genres") or []
+            genre = (genres[0].lower().strip() if genres and genres[0] else "other")
+
+            program_name = show.get("show_name") or show.get("title") or "Unknown Program"
+            
+          
+            program_id = program_name
+            if program_id in used_ids:
+                program_id = f"{program_name}_{pid}"  
+            used_ids.add(program_id) 
+
+            programs.append({
+                "program_id": program_id,  
+                "start": start_time,
+                "end": end_time,
+                "genre": genre,
+                "program_name": program_name,  
+                "score": random.randint(50, 90)
+            })
+
+        smart_json["channels"].append({
+            "channel_id": i,
+            "channel_name": channel,
+            "programs": programs
+        })
+
+    return smart_json
+
+    all_starts, all_ends = [], []
+
+    for ch_data in epg_data.values():
+        for show in ch_data.get("shows", []):
+            
+            start_time = show.get("show_start")
+            end_time = show.get("show_end")
+
+            
+            if start_time and end_time:
+                start_min = unix_to_minutes(start_time)
+                end_min = unix_to_minutes(end_time)
+
+               
+                if end_min < start_min:
+                    end_min += 1440  
+
+                
+                all_starts.append(start_min)
+                all_ends.append(end_min)
+
+    
+    opening_time = min(all_starts) if all_starts else 480  
+    closing_time = max(all_ends) if all_ends else 1380    
+
+    
+    smart_json = {
+        "opening_time": opening_time,
+        "closing_time": closing_time,
+        "min_duration": 30,
+        "max_consecutive_genre": 2,
+        "channels_count": len(epg_data),
+        "switch_penalty": 5,
+        "termination_penalty": 10,
+        "time_preferences": generate_time_preferences(epg_data),
+        "priority_blocks": generate_priority_blocks(epg_data),
+        "channels": []
+    }
+
+    
+    for i, (channel, ch_data) in enumerate(epg_data.items()):
+        programs = []
+        for pid, show in enumerate(ch_data.get("shows", []), start=1):
+            start_time = unix_to_minutes(show["show_start"])
+            end_time = unix_to_minutes(show["show_end"])
+
+            
+            if end_time < start_time:
+                end_time += 1440  
+
+            genres = show.get("genres") or []
+            genre = (genres[0].lower().strip() if genres and genres[0] else "other")
+
+            
+            program_name = show.get("show_name") or show.get("title") or "Unknown Program"
+
+            programs.append({
+                "program_id": f"{channel}_{pid}",
+                "start": start_time,
+                "end": end_time,
+                "genre": genre,
+                "program_name": program_name,  
+                "score": random.randint(50, 90)
+            })
+
+        smart_json["channels"].append({
+            "channel_id": i,
+            "channel_name": channel,
+            "programs": programs
+        })
+
+    return smart_json
+
+    all_starts, all_ends = [], []
+
+    for ch_data in epg_data.values():
+        for show in ch_data.get("shows", []):
+            
+            start_time = show.get("show_start")
+            end_time = show.get("show_end")
+
+            
+            if start_time and end_time:
+                start_min = unix_to_minutes(start_time)
+                end_min = unix_to_minutes(end_time)
+
+                
+                if end_min < start_min:
+                    end_min += 1440  
+
+                
+                all_starts.append(start_min)
+                all_ends.append(end_min)
+
+   
+    opening_time = min(all_starts) if all_starts else 480 
+    closing_time = max(all_ends) if all_ends else 1380    
+
+    
+    smart_json = {
+        "opening_time": opening_time,
+        "closing_time": closing_time,
+        "min_duration": 30,
+        "max_consecutive_genre": 2,
+        "channels_count": len(epg_data),
+        "switch_penalty": 5,
+        "termination_penalty": 10,
+        "time_preferences": generate_time_preferences(epg_data),
+        "priority_blocks": generate_priority_blocks(epg_data),
+        "channels": []
+    }
+
+    
+    for i, (channel, ch_data) in enumerate(epg_data.items()):
+        programs = []
+        for pid, show in enumerate(ch_data.get("shows", []), start=1):
+            start_time = unix_to_minutes(show["show_start"])
+            end_time = unix_to_minutes(show["show_end"])
+
+           
+            if end_time < start_time:
+                end_time += 1440  
+
+            genres = show.get("genres") or []
+            genre = (genres[0].lower().strip() if genres and genres[0] else "other")
+            programs.append({
+                "program_id": f"{channel}_{pid}",
+                "start": start_time,
+                "end": end_time,
+                "genre": genre,
+                "score": random.randint(50, 90)
+            })
+
+        smart_json["channels"].append({
+            "channel_id": i,
+            "channel_name": channel,
+            "programs": programs
+        })
+
+    return smart_json
+
+    all_starts, all_ends = [], []
+
+    for ch_data in epg_data.values():
+        for show in ch_data.get("shows", []):
+            
+            start_time = show.get("show_start")
+            end_time = show.get("show_end")
+
+            
+            if start_time and end_time and start_time < end_time:
+                start_min = unix_to_minutes(start_time)
+                end_min = unix_to_minutes(end_time)
+
+                all_starts.append(start_min)
+                all_ends.append(end_min)
+
+    
+    opening_time = min(all_starts) if all_starts else 480  
+    closing_time = max(all_ends) if all_ends else 1380    
+
+    
+    smart_json = {
+        "opening_time": opening_time,
+        "closing_time": closing_time,
+        "min_duration": 30,
+        "max_consecutive_genre": 2,
+        "channels_count": len(epg_data),
+        "switch_penalty": 5,
+        "termination_penalty": 10,
+        "time_preferences": generate_time_preferences(epg_data),
+        "priority_blocks": generate_priority_blocks(epg_data),
+        "channels": []
+    }
+
+    
+    for i, (channel, ch_data) in enumerate(epg_data.items()):
+        programs = []
+        for pid, show in enumerate(ch_data.get("shows", []), start=1):
+            start_time = unix_to_minutes(show["show_start"])
+            end_time = unix_to_minutes(show["show_end"])
+            genres = show.get("genres") or []
+            genre = (genres[0].lower().strip() if genres and genres[0] else "other")
+            programs.append({
+                "program_id": f"{channel}_{pid}",
+                "start": start_time,
+                "end": end_time,
+                "genre": genre,
+                "score": random.randint(50, 90)
+            })
+
+        smart_json["channels"].append({
+            "channel_id": i,
+            "channel_name": channel,
+            "programs": programs
+        })
+
+    return smart_json
+
+    all_starts, all_ends = [], []
     for ch_data in epg_data.values():
         for show in ch_data.get("shows", []):
             s = unix_to_minutes(show["show_start"])
@@ -282,7 +558,7 @@ def epg_to_smart_json(epg_data):
         "switch_penalty": 5,
         "termination_penalty": 10,
         "time_preferences": generate_time_preferences(epg_data),
-        "priority_blocks": generate_priority_blocks(epg_data),  # dynamically generated
+        "priority_blocks": generate_priority_blocks(epg_data),  
 
         "channels": []
     }
@@ -341,6 +617,7 @@ for day_offset in range(-choiceFrom, choiceTo):
         epg_data = day_data
         smart_json = epg_to_smart_json(epg_data)
 
-    output_file = f"2ipko_schedule_{date_str}1.json"
+    output_file = f"ipko_schedule_{date_str}.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(smart_json, f, indent=2, ensure_ascii=False)
+
