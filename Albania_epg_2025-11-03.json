@@ -207,7 +207,6 @@
   "channels": [
     {
       "channel_id": 0,
-      "channel_name": "Top Channel",
       "programs": [
         {
           "program_id": "Të shpallet",
@@ -234,7 +233,6 @@
     },
     {
       "channel_id": 1,
-      "channel_name": "TV Arta",
       "programs": [
         {
           "program_id": "Të shpallet_1",
@@ -261,7 +259,6 @@
     },
     {
       "channel_id": 2,
-      "channel_name": "Rai Uno",
       "programs": [
         {
           "program_id": "Che tempo fa",
@@ -288,7 +285,6 @@
     },
     {
       "channel_id": 3,
-      "channel_name": "Rai Due",
       "programs": [
         {
           "program_id": "La Nuova DS 2025",
@@ -315,7 +311,6 @@
     },
     {
       "channel_id": 4,
-      "channel_name": "Rai Tre",
       "programs": [
         {
           "program_id": "TG3 Mondo",
@@ -342,7 +337,6 @@
     },
     {
       "channel_id": 5,
-      "channel_name": "Canale 5",
       "programs": [
         {
           "program_id": "Pressing",
@@ -369,7 +363,6 @@
     },
     {
       "channel_id": 6,
-      "channel_name": "Italia 1",
       "programs": [
         {
           "program_id": "Salvate il Titan! - Cronaca di una morte annunciata",
@@ -396,7 +389,6 @@
     },
     {
       "channel_id": 7,
-      "channel_name": "RTL",
       "programs": [
         {
           "program_id": "CSI: Den Tätern auf der Spur",
@@ -423,7 +415,6 @@
     },
     {
       "channel_id": 8,
-      "channel_name": "RTL II",
       "programs": [
         {
           "program_id": "Ring 2",
@@ -450,7 +441,6 @@
     },
     {
       "channel_id": 9,
-      "channel_name": "n-tv",
       "programs": [
         {
           "program_id": "Anwälte der Toten - Im Kopf des Mörders",
@@ -477,7 +467,6 @@
     },
     {
       "channel_id": 10,
-      "channel_name": "Eurosport 1",
       "programs": [
         {
           "program_id": "Marathon: New York Marathon (Athletics: Marathon New York), USA",
@@ -504,7 +493,6 @@
     },
     {
       "channel_id": 11,
-      "channel_name": "Eurosport 2",
       "programs": [
         {
           "program_id": "FIA WEC: 6 Hours of Imola. Race (FIA WEC: 6 Hours of Imola), Italy_1",
@@ -531,7 +519,6 @@
     },
     {
       "channel_id": 12,
-      "channel_name": "Discovery Channel",
       "programs": [
         {
           "program_id": "Bitchin' Rides: Road To The Ridler",
@@ -558,7 +545,6 @@
     },
     {
       "channel_id": 13,
-      "channel_name": "Discovery Science",
       "programs": [
         {
           "program_id": "Tesla's Death Ray: A Murder Declassified",
@@ -585,7 +571,6 @@
     },
     {
       "channel_id": 14,
-      "channel_name": "ID Xtra",
       "programs": [
         {
           "program_id": "Les signes du mal",
@@ -612,7 +597,6 @@
     },
     {
       "channel_id": 15,
-      "channel_name": "RTSH 24",
       "programs": [
         {
           "program_id": "RTSH 24 HD",
@@ -639,7 +623,6 @@
     },
     {
       "channel_id": 16,
-      "channel_name": "Top News",
       "programs": [
         {
           "program_id": "Top News",
@@ -666,7 +649,6 @@
     },
     {
       "channel_id": 17,
-      "channel_name": "Rai News 24",
       "programs": [
         {
           "program_id": "News",
@@ -693,7 +675,6 @@
     },
     {
       "channel_id": 18,
-      "channel_name": "Euronews",
       "programs": [
         {
           "program_id": "5 Minutes",
@@ -720,7 +701,6 @@
     },
     {
       "channel_id": 19,
-      "channel_name": "BBC World News",
       "programs": [
         {
           "program_id": "BBC News (BBC News), United Kingdom, 2025",
@@ -747,7 +727,6 @@
     },
     {
       "channel_id": 20,
-      "channel_name": "CNN International",
       "programs": [
         {
           "program_id": "CNN Newsroom Sunday",
@@ -774,7 +753,6 @@
     },
     {
       "channel_id": 21,
-      "channel_name": "Al Jazeera International",
       "programs": [
         {
           "program_id": "News_1",
@@ -801,7 +779,6 @@
     },
     {
       "channel_id": 22,
-      "channel_name": "Nickelodeon",
       "programs": [
         {
           "program_id": "The Smurfs (Les Schtroumpfs), Family, Animation, For children, Fantasy, Adventure, USA, France, Belgium, Germany, 2022",
@@ -828,7 +805,6 @@
     },
     {
       "channel_id": 23,
-      "channel_name": "Baby TV",
       "programs": [
         {
           "program_id": "Dreamy Nights (Dreamy Nights), For children, United Kingdom, 2021",
