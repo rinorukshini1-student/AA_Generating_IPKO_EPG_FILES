@@ -210,7 +210,6 @@
   "channels": [
     {
       "channel_id": 0,
-      "channel_name": "Top Channel",
       "programs": [
         {
           "program_id": "Të shpallet",
@@ -237,7 +236,6 @@
     },
     {
       "channel_id": 1,
-      "channel_name": "TV Arta",
       "programs": [
         {
           "program_id": "Të shpallet_1",
@@ -264,7 +262,6 @@
     },
     {
       "channel_id": 2,
-      "channel_name": "Rai Uno",
       "programs": [
         {
           "program_id": "Il paradiso delle signore - Stag. 10 Ep. 37 - Episodio 37",
@@ -291,7 +288,6 @@
     },
     {
       "channel_id": 3,
-      "channel_name": "Rai Due",
       "programs": [
         {
           "program_id": "BellaMa' 2025",
@@ -318,7 +314,6 @@
     },
     {
       "channel_id": 4,
-      "channel_name": "Rai Tre",
       "programs": [
         {
           "program_id": "Montagne di energia",
@@ -345,7 +340,6 @@
     },
     {
       "channel_id": 5,
-      "channel_name": "Canale 5",
       "programs": [
         {
           "program_id": "Uomini e donne",
@@ -372,7 +366,6 @@
     },
     {
       "channel_id": 6,
-      "channel_name": "Italia 1",
       "programs": [
         {
           "program_id": "NCIS: Los Angeles",
@@ -399,7 +392,6 @@
     },
     {
       "channel_id": 7,
-      "channel_name": "RTL",
       "programs": [
         {
           "program_id": "Ulrich Wetzel - Das Strafgericht",
@@ -426,7 +418,6 @@
     },
     {
       "channel_id": 8,
-      "channel_name": "RTL II",
       "programs": [
         {
           "program_id": "Hartz Rot Gold",
@@ -453,7 +444,6 @@
     },
     {
       "channel_id": 9,
-      "channel_name": "n-tv",
       "programs": [
         {
           "program_id": "ntv Trendbarometer",
@@ -480,7 +470,6 @@
     },
     {
       "channel_id": 10,
-      "channel_name": "Eurosport 1",
       "programs": [
         {
           "program_id": "Cycling: Milano-Sanremo. Men | Pavia - San Remo (289km) (Cycling: Milano-Sanremo), Italy",
@@ -507,7 +496,6 @@
     },
     {
       "channel_id": 11,
-      "channel_name": "Eurosport 2",
       "programs": [
         {
           "program_id": "Endurance Autoraces: Qatar 1812km. Race (Car racing: FIA World Endurance Championship: Qatar 1812 km), Kataras_1",
@@ -534,7 +522,6 @@
     },
     {
       "channel_id": 12,
-      "channel_name": "Discovery Channel",
       "programs": [
         {
           "program_id": "Gold Divers",
@@ -561,7 +548,6 @@
     },
     {
       "channel_id": 13,
-      "channel_name": "Discovery Science",
       "programs": [
         {
           "program_id": "Cooper's Treasure",
@@ -588,7 +574,6 @@
     },
     {
       "channel_id": 14,
-      "channel_name": "ID Xtra",
       "programs": [
         {
           "program_id": "Eaux troubles",
@@ -615,7 +600,6 @@
     },
     {
       "channel_id": 15,
-      "channel_name": "RTSH 24",
       "programs": [
         {
           "program_id": "RTSH 24 HD",
@@ -642,7 +626,6 @@
     },
     {
       "channel_id": 16,
-      "channel_name": "Top News",
       "programs": [
         {
           "program_id": "Top News",
@@ -669,7 +652,6 @@
     },
     {
       "channel_id": 17,
-      "channel_name": "B92",
       "programs": [
         {
           "program_id": "Kolo sreće",
@@ -696,7 +678,6 @@
     },
     {
       "channel_id": 18,
-      "channel_name": "Rai News 24",
       "programs": [
         {
           "program_id": "Pomeriggio 24 2025",
@@ -723,7 +704,6 @@
     },
     {
       "channel_id": 19,
-      "channel_name": "Euronews",
       "programs": [
         {
           "program_id": "Euronews Now",
@@ -750,7 +730,6 @@
     },
     {
       "channel_id": 20,
-      "channel_name": "BBC World News",
       "programs": [
         {
           "program_id": "BBC News Now (BBC News Now), United Kingdom, 2025",
@@ -777,7 +756,6 @@
     },
     {
       "channel_id": 21,
-      "channel_name": "CNN International",
       "programs": [
         {
           "program_id": "World Sport",
@@ -804,7 +782,6 @@
     },
     {
       "channel_id": 22,
-      "channel_name": "Al Jazeera International",
       "programs": [
         {
           "program_id": "The Stream",
@@ -831,7 +808,6 @@
     },
     {
       "channel_id": 23,
-      "channel_name": "Nickelodeon",
       "programs": [
         {
           "program_id": "The Fairly OddParents: A New Wish (The Fairly OddParents: A New Wish), Family, Comedy, Fantasy, Adventure, USA, 2024",
@@ -858,7 +834,6 @@
     },
     {
       "channel_id": 24,
-      "channel_name": "Baby TV",
       "programs": [
         {
           "program_id": "Art, Activity & Music Time (Art, Activity & Music Time), For children, Israel",
