@@ -152,7 +152,6 @@ def epg_to_smart_json(epg_data):
             })
         smart_json["channels"].append({
             "channel_id": i,
-            "channel_name": channel,
             "programs": programs
         })
     return smart_json
@@ -189,7 +188,6 @@ def epg_to_smart_json(epg_data):
             })
         smart_json["channels"].append({
             "channel_id": i,
-            "channel_name": channel,
             "programs": programs
         })
     return smart_json
@@ -347,3 +345,4 @@ while True:
 
         print(f" Saved {filename}")
     break  
+
