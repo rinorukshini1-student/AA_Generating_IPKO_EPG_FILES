@@ -215,7 +215,6 @@
   "channels": [
     {
       "channel_id": 0,
-      "channel_name": "Top Channel",
       "programs": [
         {
           "program_id": "Programi i Top Channel HD",
@@ -242,7 +241,6 @@
     },
     {
       "channel_id": 1,
-      "channel_name": "TV Arta",
       "programs": [
         {
           "program_id": "Të shpallet",
@@ -269,7 +267,6 @@
     },
     {
       "channel_id": 2,
-      "channel_name": "Rai Uno",
       "programs": [
         {
           "program_id": "Porta a porta - Stag. 2025 - Puntata del 29/10/2025",
@@ -296,7 +293,6 @@
     },
     {
       "channel_id": 3,
-      "channel_name": "Rai Due",
       "programs": [
         {
           "program_id": "Radio2 Social Club - Stag. 2025 - Puntata del 29/10/2025",
@@ -323,7 +319,6 @@
     },
     {
       "channel_id": 4,
-      "channel_name": "Rai Tre",
       "programs": [
         {
           "program_id": "Tg3 Linea Notte",
@@ -350,7 +345,6 @@
     },
     {
       "channel_id": 5,
-      "channel_name": "Canale 5",
       "programs": [
         {
           "program_id": "Pressing",
@@ -377,7 +371,6 @@
     },
     {
       "channel_id": 6,
-      "channel_name": "Italia 1",
       "programs": [
         {
           "program_id": "Studio aperto - la giornata",
@@ -404,7 +397,6 @@
     },
     {
       "channel_id": 7,
-      "channel_name": "RTL",
       "programs": [
         {
           "program_id": "RTL Nachtjournal",
@@ -431,7 +423,6 @@
     },
     {
       "channel_id": 8,
-      "channel_name": "RTL II",
       "programs": [
         {
           "program_id": "Der Trödeltrupp - Das Geld liegt im Keller",
@@ -458,7 +449,6 @@
     },
     {
       "channel_id": 9,
-      "channel_name": "n-tv",
       "programs": [
         {
           "program_id": "Rätselhafte Phänomene",
@@ -485,7 +475,6 @@
     },
     {
       "channel_id": 10,
-      "channel_name": "Eurosport 1",
       "programs": [
         {
           "program_id": "Endurance Car Racing: 6 Hours of Spa-Francorchamps. Race, Round 3 (Car racing: FIA WEC 6 Hours of Spa-Francorchamps), Belgium, 2025",
@@ -512,7 +501,6 @@
     },
     {
       "channel_id": 11,
-      "channel_name": "Eurosport 2",
       "programs": [
         {
           "program_id": "Snooker: Saudi Masters. Final: Day 9 (Saudi Arabia Snooker Masters), Saudo Arabija_1",
@@ -539,7 +527,6 @@
     },
     {
       "channel_id": 12,
-      "channel_name": "Discovery Channel",
       "programs": [
         {
           "program_id": "How the Universe Works",
@@ -566,7 +553,6 @@
     },
     {
       "channel_id": 13,
-      "channel_name": "Discovery Science",
       "programs": [
         {
           "program_id": "Expedition X",
@@ -593,7 +579,6 @@
     },
     {
       "channel_id": 14,
-      "channel_name": "ID Xtra",
       "programs": [
         {
           "program_id": "Sentiers meurtriers",
@@ -620,7 +605,6 @@
     },
     {
       "channel_id": 15,
-      "channel_name": "RTSH 24",
       "programs": [
         {
           "program_id": "RTSH 24 HD",
@@ -647,7 +631,6 @@
     },
     {
       "channel_id": 16,
-      "channel_name": "Top News",
       "programs": [
         {
           "program_id": "Top News",
@@ -674,7 +657,6 @@
     },
     {
       "channel_id": 17,
-      "channel_name": "B92",
       "programs": [
         {
           "program_id": "Kuhinja",
@@ -701,7 +683,6 @@
     },
     {
       "channel_id": 18,
-      "channel_name": "Rai News 24",
       "programs": [
         {
           "program_id": "News",
@@ -728,7 +709,6 @@
     },
     {
       "channel_id": 19,
-      "channel_name": "Euronews",
       "programs": [
         {
           "program_id": "The European Debrief",
@@ -755,7 +735,6 @@
     },
     {
       "channel_id": 20,
-      "channel_name": "BBC World News",
       "programs": [
         {
           "program_id": "BBC World News America (BBC World News America), USA, 2025",
@@ -782,7 +761,6 @@
     },
     {
       "channel_id": 21,
-      "channel_name": "CNN International",
       "programs": [
         {
           "program_id": "The Brief with Jim Sciutto",
@@ -809,7 +787,6 @@
     },
     {
       "channel_id": 22,
-      "channel_name": "Al Jazeera International",
       "programs": [
         {
           "program_id": "News_1",
@@ -836,7 +813,6 @@
     },
     {
       "channel_id": 23,
-      "channel_name": "Nickelodeon",
       "programs": [
         {
           "program_id": "The Smurfs (Les Schtroumpfs), Family, Animation, For children, Fantasy, Adventure, USA, France, Belgium, Germany, 2022",
@@ -863,7 +839,6 @@
     },
     {
       "channel_id": 24,
-      "channel_name": "Baby TV",
       "programs": [
         {
           "program_id": "Dreamy Nights (Dreamy Nights), For children, United Kingdom, 2021",
