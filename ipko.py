@@ -326,14 +326,12 @@ def epg_to_smart_json(epg_data):
                 "program_id": program_id,  
                 "start": start_time,
                 "end": end_time,
-                "genre": genre,
-                "program_name": program_name,  
+                "genre": genre,  
                 "score": random.randint(50, 90)
             })
 
         smart_json["channels"].append({
             "channel_id": i,
-            "channel_name": channel,
             "programs": programs
         })
 
@@ -399,14 +397,12 @@ def epg_to_smart_json(epg_data):
                 "program_id": f"{channel}_{pid}",
                 "start": start_time,
                 "end": end_time,
-                "genre": genre,
-                "program_name": program_name,  
+                "genre": genre,  
                 "score": random.randint(50, 90)
             })
 
         smart_json["channels"].append({
             "channel_id": i,
-            "channel_name": channel,
             "programs": programs
         })
 
@@ -474,7 +470,6 @@ def epg_to_smart_json(epg_data):
 
         smart_json["channels"].append({
             "channel_id": i,
-            "channel_name": channel,
             "programs": programs
         })
 
@@ -532,7 +527,6 @@ def epg_to_smart_json(epg_data):
 
         smart_json["channels"].append({
             "channel_id": i,
-            "channel_name": channel,
             "programs": programs
         })
 
@@ -580,7 +574,6 @@ def epg_to_smart_json(epg_data):
 
         smart_json["channels"].append({
             "channel_id": i,
-            "channel_name": channel,
             "programs": programs
         })
 
@@ -620,4 +613,5 @@ for day_offset in range(-choiceFrom, choiceTo):
     output_file = f"ipko_schedule_{date_str}.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(smart_json, f, indent=2, ensure_ascii=False)
+
 
